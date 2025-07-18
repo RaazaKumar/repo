@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card'
-import mern from '../../Assets/mern.png'
+import mern from '../../assets/mern.png'
 import './Projects.css'
 export default function Projects() {
   return (
