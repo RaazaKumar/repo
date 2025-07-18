@@ -1,7 +1,7 @@
 import React, { use } from 'react'
 import './About.css'
 import Card from '../Card/Card'
-import mern from "../../assets/mern.png";
+import mern from "../../Assets/mern.png";
 import java from '../../assets/java.png';
 import dsa from '../../assets/dsa.png';
 
