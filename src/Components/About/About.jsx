@@ -1,9 +1,9 @@
 import React, { use } from 'react'
 import './About.css'
 import Card from '../Card/Card'
-import mern from '../../Assets/mern.png';
-import java from '../../Assets/java.png';
-import dsa from '../../Assets/dsa.png';
+import mern from '../../assets/mern.png';
+import java from '../../assets/java.png';
+import dsa from '../../assets/dsa.png';
 
 export default function About() {
 
