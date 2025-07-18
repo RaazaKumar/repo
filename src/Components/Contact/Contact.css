@@ -1,0 +1,163 @@
+.projectsExperiment{
+    /* color: white; */
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    background-image: linear-gradient(to right, #ffcc00, #f90f0f);    
+     background-clip: text;
+    color:transparent;/* color: #fff; */
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+    /* font-family: 'Courier New', Courier, monospace;              */
+}
+/* Global Styling */
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* LEFT SECTION */
+.leftContact {
+  flex: 1;
+  min-width: 300px;
+  /* background: linear-gradient(135deg, #e98f19, #f3b23f); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+}
+
+.leftContact img {
+  width: 260px;
+  max-width: 80%;
+  aspect-ratio: 1/1;
+  /* border-radius: 50%; */
+  filter: drop-shadow(1px 5px 20px #2d2d2d);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.leftContact img:hover {
+  transform: rotate(5deg) scale(1.05);
+  filter: drop-shadow(0 0 12px #00f7ff);
+}
+
+/* RIGHT SECTION */
+.rightContact {
+  flex: 1;
+  min-width: 300px;
+  /* background: linear-gradient(to right, #de1f1f, #7c0c0c); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* FORM STYLING */
+.rightContact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* INPUTS & TEXTAREAS */
+.rightContact input,
+.rightContact textarea {
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #fefefe;
+  color: #222;
+  transition: all 0.3s ease;
+  box-shadow: inset 3px 3px 6px #ddd, inset -3px -3px 6px #fff;
+}
+
+.rightContact input:focus,
+.rightContact textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px 2px #ff5f5f;
+  transform: scale(1.02);
+}
+
+.rightContact input:hover,
+.rightContact textarea:hover {
+  background-color: #f7f7f7;
+}
+
+/* BUTTON */
+.rightContact button {
+  padding: 14px;
+  background: linear-gradient(45deg, #fff, #ffeaea);
+  color: #de1f1f;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.rightContact button:hover {
+  background: linear-gradient(45deg, #de1f1f, #ff7979);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* THANK YOU TEXT */
+.rightContact span {
+  text-align: center;
+  font-size: 1rem;
+  color: #00ffae;
+  margin-top: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.rightContact span:hover {
+  opacity: 1;
+  color: #00ffc3;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+  }
+
+  .leftContact,
+  .rightContact {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .leftContact img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rightContact form {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .rightContact button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}

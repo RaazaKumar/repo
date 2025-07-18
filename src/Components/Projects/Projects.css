@@ -1,0 +1,44 @@
+#projects{
+    width: 100%;
+    height: 100%;
+    /* min-height: 100vh; */
+    /* background-color: #f31c1c; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.projectsExperiment{
+    /* color: white; */
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    background-image: linear-gradient(to right, #ffcc00, #f90f0f);    
+     background-clip: text;
+    color:transparent;/* color: #fff; */
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+    /* font-family: 'Courier New', Courier, monospace;              */
+}
+.slider{
+    width: 90%;
+    height: 300px;
+    /* background-color: antiquewhite; */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.sliderBox{
+   display: flex; 
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    gap:30px
+}
