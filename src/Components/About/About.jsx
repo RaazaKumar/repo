@@ -1,10 +1,9 @@
 import React, { use } from 'react'
 import './About.css'
 import Card from '../Card/Card'
-// import mern from "../../Assets/mern.png";
-import java from '../../assets/java.png';
-import dsa from '../../assets/dsa.png';
-
+import mern from '../../assets/mern.png'
+import java from '../../assets/java.png'
+import dsa from '../../assets/dsa.png'
 export default function About() {
 
   return (
@@ -58,7 +57,7 @@ export default function About() {
     
 
     <div className="right-about">
-    <Card Title="MERN" image={java}/>
+    <Card Title="MERN" image={mern}/>
     <Card Title="JAVA" image={java}/>
     <Card Title="DSA" image={dsa}/></div>
    </div>
