@@ -76,7 +76,7 @@ color:white
 
 .right-about{
     width:50%;
-    /* height:100vh; */
+    margin-top:6rem;
     display: flex;
     align-items: center;
     justify-content: center;
